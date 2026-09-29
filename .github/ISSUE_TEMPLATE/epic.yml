@@ -1,0 +1,48 @@
+name: Epic
+description: A programme card that owns children.
+title: "EPIC: <one sentence, the north star>"
+labels: []
+body:
+  - type: input
+    id: host
+    attributes:
+      label: Host
+      description: The machine that runs the epic manager (Any for a manager that spans machines).
+      placeholder: "Any"
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Deliverable
+      description: One sentence — the outcome the whole epic delivers.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The ruling or ask this epic serves, with provenance.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What to do
+      description: The programme sketch — the children in execution order, with edges.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: The whole-epic litmus test — what proves the north star reached.
+    validations:
+      required: true
+  - type: textarea
+    id: nongoals
+    attributes:
+      label: Non-goals
+      description: The scope boundary — what this epic will NOT touch.
+    validations:
+      required: false

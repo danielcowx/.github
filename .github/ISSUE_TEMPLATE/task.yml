@@ -1,0 +1,55 @@
+name: Task
+description: A card for one act of judgment.
+title: "<one sentence, no 'and', no plural hiding a list>"
+labels: []
+body:
+  - type: input
+    id: host
+    attributes:
+      label: Host
+      description: Which machine works this — Mac, Windows, or Any (agnostic).
+      placeholder: "Any"
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Deliverable
+      description: One sentence — the single act of judgment this card completes. No "and", no plural noun hiding a list.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Motivation, provenance, the ruling or ask this card serves.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What to do
+      description: The exact steps, paths, commands and names a stranger needs to work this card end-to-end. Err long here.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduce
+      description: The command that reproduces the current state. A card carrying a `## Repro` section runs it at pickup.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: Numbered, testable — the checks a reviewer runs to prove this passed.
+    validations:
+      required: true
+  - type: textarea
+    id: nongoals
+    attributes:
+      label: Non-goals
+      description: What this card is NOT, so scope stays one act of judgment.
+    validations:
+      required: false
